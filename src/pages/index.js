@@ -42,6 +42,8 @@ family as long as he was able.</p>
 
   <p>—Moacir de Sá Pereira, Laimis’s father</p>
 
+  <p><A href="http://danafarber.jimmyfund.org/goto/in-memory-of-laimis">Make a donation to the Dana-Farber Cancer Institute in memory of Laimis</a>.</p>
+
   </Layout>)
 
 export default IndexPage
