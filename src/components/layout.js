@@ -30,7 +30,7 @@ const Layout = ({ children, location, i18nMessages }) => {
     }
   `)
 
-  const url = location.pathname;
+  const url = "";
   const { langs, defaultLangKey } = data.site.siteMetadata.languages;
   console.log(`langs: ${langs}`);
   const langKey = getCurrentLangKey(langs, defaultLangKey, url);

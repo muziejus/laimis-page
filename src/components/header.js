@@ -1,7 +1,7 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
-import SelectLanguage from './select-language';
+// import SelectLanguage from './select-language';
 
 
 const Header = ({ langs, siteTitle }) => (
@@ -29,7 +29,6 @@ const Header = ({ langs, siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
-      <SelectLanguage langs={langs} />
     </div>
   </header>
 )
