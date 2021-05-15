@@ -1,12 +1,12 @@
 import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+// import { Link } from "gatsby"
+// import { StaticImage } from "gatsby-plugin-image"
 
-import Layout from "../components/layout"
+import Layout from "../components/layout-en"
 import Seo from "../components/seo"
 
-const IndexPage = () => (
-  <Layout>
+const IndexPage = (props) => (
+  <Layout location={props.location}>
     <Seo title="Home" />
     <h1>Welcome</h1>
     <p>Join us in remembering our beloved Laimis, 1984–2021.</p>
@@ -42,7 +42,7 @@ family as long as he was able.</p>
 
   <p>—Moacir de Sá Pereira, Laimis’s father</p>
 
-  <p><A href="http://danafarber.jimmyfund.org/goto/in-memory-of-laimis">Make a donation to the Dana-Farber Cancer Institute in memory of Laimis</a>.</p>
+  <p><a href="http://danafarber.jimmyfund.org/goto/in-memory-of-laimis">Make a donation to the Dana-Farber Cancer Institute in memory of Laimis</a>.</p>
 
   </Layout>)
 

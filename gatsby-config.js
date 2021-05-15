@@ -1,8 +1,11 @@
+const languages = require("./src/data/languages");
+
 module.exports = {
   siteMetadata: {
     title: `In Memory of Laimis`,
     description: `Remembering our beloved Laimis Jurgis Arcilio de Sá Pereira, 1984–2021`,
     author: `@muziejus`,
+    languages,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -15,6 +18,14 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
+    {
+      resolve: "gatsby-plugin-i18n",
+      options: {
+        langKeyDefault: "en",
+        useLangKeyLayout: true,
+        prefixDefault: false,
+      }
+    },
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,

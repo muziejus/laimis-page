@@ -10,22 +10,39 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+import { getCurrentLangKey, getLangs, getUrlForLang } from 'ptz-i18n';
+import { IntlProvider } from 'react-intl';
+// import 'intl';
 import "./layout.css"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, location, i18nMessages }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
         siteMetadata {
           title
+          languages {
+            defaultLangKey
+            langs
+          }
         }
       }
     }
   `)
 
+  const url = location.pathname;
+  const { langs, defaultLangKey } = data.site.siteMetadata.languages;
+  console.log(`langs: ${langs}`);
+  const langKey = getCurrentLangKey(langs, defaultLangKey, url);
+  const homeLink = `/${langKey}/`.replace(`/${defaultLangKey}/`, '/');
+  const langsMenu = getLangs(langs, langKey, getUrlForLang(homeLink, url)).map((item) => ({ ...item, link: item.link.replace(`/${defaultLangKey}/`, '/') }));
+
   return (
-    <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+    <IntlProvider
+      locale={langKey}
+      messages={i18nMessages}
+    >
+      <Header siteTitle={data.site.siteMetadata?.title || `Title`} langs={langsMenu} />
       <div
         style={{
           margin: `0 auto`,
@@ -44,7 +61,7 @@ const Layout = ({ children }) => {
           <a href="https://www.gatsbyjs.com">Gatsby</a>
         </footer>
       </div>
-    </>
+    </IntlProvider>
   )
 }
 

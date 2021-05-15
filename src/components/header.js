@@ -1,8 +1,10 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
+import SelectLanguage from './select-language';
 
-const Header = ({ siteTitle }) => (
+
+const Header = ({ langs, siteTitle }) => (
   <header
     style={{
       background: `rebeccapurple`,
@@ -27,6 +29,7 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
+      <SelectLanguage langs={langs} />
     </div>
   </header>
 )
