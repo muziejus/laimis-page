@@ -17,7 +17,7 @@ const IndexPage = () => (
   (née Matulionytė), MT/ASCP, of New Bedford (originally from Winnipeg, Manitoba,
     Canada) and Moacir de Sá Pereira, MD, of Talaíde, Cascais, Portugal
   (originally from Rio de Janeiro, RJ, Brazil). He was the grandson of Julija
-  Matulionienė (née Kranisckaitė) and Pranas Matulionis; and Yolanda Maria Pompeu de
+  Matulionienė (née Krasnickaitė) and Pranas Matulionis; and Yolanda Maria Pompeu de
   Barros e Sá Pereira and Moacyr de Sá Pereira, all deceased. </p>
 
 <p>He was brother to Moacir Pranas de Sá Pereira, PhD, of New York, NY; Varpas
@@ -40,7 +40,7 @@ Mokykla</a>.  He worked at <a href="https://sidwainer.com/">Sid Wainer &amp; Son
 href="https://www.facebook.com/TheArmouryWargamesandHobbies/">the Armoury</a> in Fairhaven, MA, and played tabletop and computer games with his friends and
 family as long as he was able.</p>
 
-  <p>—Moacir de Sá Pereira</p>
+  <p>—Moacir de Sá Pereira, Laimis’s father</p>
 
   </Layout>)
 
