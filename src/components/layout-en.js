@@ -12,5 +12,7 @@ export default (props) => (
   <Layout
     {...props}
     i18nMessages={messages}
-  />
+  >
+  {props.children}
+  </Layout>
 );

@@ -11,6 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 import Header from "./header"
+import Footer from "./footer"
 import { getCurrentLangKey, getLangs, getUrlForLang } from 'ptz-i18n';
 import { IntlProvider } from 'react-intl';
 import "./layout.css";
@@ -31,9 +32,9 @@ const Layout = ({ children, location, i18nMessages }) => {
     }
   `)
 
-  const url = "";
+  const url = location.pathname;
   const { langs, defaultLangKey } = data.site.siteMetadata.languages;
-  console.log(`langs: ${langs}`);
+  // console.log(`location: ${location.pathname}`);
   const langKey = getCurrentLangKey(langs, defaultLangKey, url);
   const homeLink = `/${langKey}/`.replace(`/${defaultLangKey}/`, '/');
   const langsMenu = getLangs(langs, langKey, getUrlForLang(homeLink, url)).map((item) => ({ ...item, link: item.link.replace(`/${defaultLangKey}/`, '/') }));
@@ -52,15 +53,7 @@ const Layout = ({ children, location, i18nMessages }) => {
         placeholder="blurred"
         />
       </main>
-      <footer
-        style={{
-          marginTop: `2rem`,
-        }}
-      >
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
-      </footer>
+    <Footer langs={langsMenu} />
     </IntlProvider>
   )
 }

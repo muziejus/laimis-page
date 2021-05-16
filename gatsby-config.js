@@ -6,12 +6,45 @@ module.exports = {
     description: `Remembering our beloved Laimis Jurgis Arcilio de Sá Pereira, 1984–2021`,
     author: `@muziejus`,
     languages,
+    menuLinks: [
+      {
+        name: `menuTestimonials`,
+        link: `/testimonials`,
+      },
+      {
+        name: `menuArchive`,
+        link: `/archive`,
+      },
+      {
+        name: `menuJimmyFund`,
+        link: `/jimmy-fund`,
+      },
+      {
+        name: `menuCamNeelyFoundation`,
+        link: `/cam-neely-foundation`,
+      },
+    ],
   },
   plugins: [
     `gatsby-plugin-postcss`,
     `gatsby-plugin-mdx`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
+    {
+      resolve: `gatsby-plugin-google-fonts-v2`,
+      options: {
+        fonts: [
+          {
+            family: "PT Serif",
+            weights: [400, 700],
+          },
+          {
+            family: "Libre Baskerville",
+            weights: [400, 700],
+          },
+        ],
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -25,7 +58,8 @@ module.exports = {
       options: {
         langKeyDefault: "en",
         useLangKeyLayout: true,
-        prefixDefault: false,
+        langKeyForNull: "en",
+        // prefixDefault: false,
       }
     },
     `gatsby-plugin-sharp`,

@@ -1,4 +1,5 @@
 body {
+  font-family: "Libre Baskerville", "ui-serif", "Georgia", "Times", "serif";
   @apply text-secondary-500 bg-background;
 }
 
@@ -18,6 +19,3 @@ main article p {
   @apply pb-4;
 }
 
-footer {
-  @apply px-8 py-4 bg-primary-900 text-background;
-}
