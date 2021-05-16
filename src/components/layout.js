@@ -44,7 +44,7 @@ const Layout = ({ children, location, i18nMessages }) => {
       locale={langKey}
       messages={i18nMessages}
     >
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} langs={langsMenu} />
+      <Header url={url} langKey={langKey} langs={langsMenu} />
       <main>
         <article>
           {children}

@@ -1,5 +1,5 @@
 header {
-  @apply flex flex-row items-center justify-center w-screen px-10 py-4 bg-primary-500;
+  @apply flex flex-row items-center justify-between w-screen px-10 py-4 bg-primary-500;
 }
 
 header h1 {

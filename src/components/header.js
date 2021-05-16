@@ -7,7 +7,7 @@ import Menu from "./menu";
 import "./header.css";
 
 
-const Header = ({ langs }) => (
+const Header = ({ url, langKey, langs }) => (
   <header>
     <h1>
       <Link
@@ -16,7 +16,7 @@ const Header = ({ langs }) => (
         <FormattedMessage id="title" />
       </Link>
     </h1>
-    <Menu />
+    <Menu url={url} langKey={langKey} />
   </header>
 )
 

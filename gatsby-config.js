@@ -58,8 +58,8 @@ module.exports = {
       options: {
         langKeyDefault: "en",
         useLangKeyLayout: true,
-        langKeyForNull: "en",
-        // prefixDefault: false,
+        // langKeyForNull: "en",
+        prefixDefault: false,
       }
     },
     `gatsby-plugin-sharp`,

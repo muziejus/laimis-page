@@ -1,0 +1,12 @@
+ul.menu {
+  font-family: "PT Serif", "ui-serif", "Georgia", "Times", "serif";
+  @apply flex flex-row text-background space-x-2;
+}
+
+ul.menu li {
+  @apply px-2 py-3;
+}
+
+ul.menu li:hover, ul.menu li.active {
+  @apply bg-primary-800;
+}
