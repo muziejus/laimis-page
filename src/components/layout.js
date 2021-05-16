@@ -13,8 +13,8 @@ import { StaticImage } from "gatsby-plugin-image"
 import Header from "./header"
 import { getCurrentLangKey, getLangs, getUrlForLang } from 'ptz-i18n';
 import { IntlProvider } from 'react-intl';
+import "./layout.css";
 // import 'intl';
-import "./layout.css"
 
 const Layout = ({ children, location, i18nMessages }) => {
   const data = useStaticQuery(graphql`
@@ -44,29 +44,23 @@ const Layout = ({ children, location, i18nMessages }) => {
       messages={i18nMessages}
     >
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} langs={langsMenu} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>
+      <main>
+        <article>
+          {children}
+        </article>
         <StaticImage src="../images/laimis-uhaul.jpg" alt="Laimis smiling broadly." 
         placeholder="blurred"
         />
-        {children}
-        </main>
-        <footer
-          style={{
-            marginTop: `2rem`,
-          }}
-        >
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
-      </div>
+      </main>
+      <footer
+        style={{
+          marginTop: `2rem`,
+        }}
+      >
+        © {new Date().getFullYear()}, Built with
+        {` `}
+        <a href="https://www.gatsbyjs.com">Gatsby</a>
+      </footer>
     </IntlProvider>
   )
 }

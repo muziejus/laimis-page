@@ -8,6 +8,7 @@ module.exports = {
     languages,
   },
   plugins: [
+    `gatsby-plugin-postcss`,
     `gatsby-plugin-mdx`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
