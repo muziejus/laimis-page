@@ -8,6 +8,7 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 
 import Header from "./header"
 import { getCurrentLangKey, getLangs, getUrlForLang } from 'ptz-i18n';
@@ -50,7 +51,12 @@ const Layout = ({ children, location, i18nMessages }) => {
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
-        <main>{children}</main>
+        <main>
+        <StaticImage src="../images/laimis-uhaul.jpg" alt="Laimis smiling broadly." 
+        placeholder="blurred"
+        />
+        {children}
+        </main>
         <footer
           style={{
             marginTop: `2rem`,
