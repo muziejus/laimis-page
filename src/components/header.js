@@ -4,6 +4,7 @@ import { FormattedMessage } from 'react-intl';
 import { Link } from "gatsby"
 // import SelectLanguage from './select-language';
 import Menu from "./menu";
+import DropdownMenu from "./dropdown-menu";
 import "./header.css";
 
 
@@ -16,7 +17,10 @@ const Header = ({ url, langKey, langs }) => (
         <FormattedMessage id="title" />
       </Link>
     </h1>
-    <Menu url={url} langKey={langKey} />
+    <div className="flex flex-row">
+      <Menu url={url} langKey={langKey} />
+      <DropdownMenu url={url} langKey={langKey} />
+    </div>
   </header>
 )
 

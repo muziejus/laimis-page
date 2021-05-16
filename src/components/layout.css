@@ -4,11 +4,11 @@ body {
 }
 
 main {
-  @apply w-screen px-10 py-8 grid grid-cols-2 gap-8;
+  @apply flex flex-col w-screen px-10 py-8 md:grid md:grid-cols-2 gap-8;
 }
 
 main article {
-  @apply w-full;
+  @apply order-last w-full md:order-first;
 }
 
 main article h1 {

@@ -13,7 +13,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import Header from "./header"
 import Footer from "./footer"
 import { getCurrentLangKey, getLangs, getUrlForLang } from 'ptz-i18n';
-import { IntlProvider } from 'react-intl';
+import { FormattedMessage, IntlProvider } from 'react-intl';
 import "./layout.css";
 // import 'intl';
 
@@ -49,9 +49,12 @@ const Layout = ({ children, location, i18nMessages }) => {
         <article>
           {children}
         </article>
+        <aside>
         <StaticImage src="../images/laimis-uhaul.jpg" alt="Laimis smiling broadly." 
         placeholder="blurred"
         />
+        <p><FormattedMessage id="laimisUHaulCaption" /></p>
+        </aside>
       </main>
     <Footer langs={langsMenu} />
     </IntlProvider>

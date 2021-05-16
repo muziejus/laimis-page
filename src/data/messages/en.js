@@ -8,4 +8,5 @@ module.exports = {
   "menuArchive": "Archive",
   "menuJimmyFund": "Jimmy Fund",
   "menuCamNeelyFoundation": "Cam Neely Foundation",
+  "laimisUHaulCaption": "Even after helping his brother move his apartment into a U-Haul storage locker on a hot July day in 2018, Laimis was still all smiles.",
 };
