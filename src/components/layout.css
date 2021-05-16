@@ -19,3 +19,19 @@ main article p {
   @apply pb-4;
 }
 
+main article a {
+  @apply font-bold text-secondary-600;
+}
+
+main article a:hover {
+  @apply underline;
+}
+
+button.button {
+  font-family: "PT Serif", "ui-serif", "Georgia", "Times", "serif";
+  @apply px-4 py-2 border rounded bg-primary-500 text-background border-primary-900 ;
+}
+
+button.button:hover {
+  @apply shadow bg-primary-700 border-primary-300 ;
+}

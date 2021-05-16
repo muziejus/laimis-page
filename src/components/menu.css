@@ -4,7 +4,7 @@ ul.menu {
 }
 
 ul.menu li {
-  @apply px-2 py-3;
+  @apply px-4 py-3 rounded;
 }
 
 ul.menu li:hover, ul.menu li.active {

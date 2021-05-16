@@ -1,3 +1,4 @@
+import { Link } from "gatsby";
 import Layout from "../components/layout-en"
 import SEO from "../components/seo"
 
@@ -45,6 +46,18 @@ the Boston Bruins.
 
 —Moacir de Sá Pereira, Laimis’s father
 
-[Make a donation to the Dana-Farber Cancer Institute in memory of Laimis](http://danafarber.jimmyfund.org/goto/in-memory-of-laimis).
+<div class="w-full flex flex-row space-x-4 items-stretch">
+	<Link to="/jimmy-fund" className="w-1/2">
+		<button class="button w-full h-full">
+			Donate to the Jimmy Fund
+		</button>
+	</Link>
+	<Link to="/cam-neely-foundation" className="w-1/2">
+		<button class="button w-full h-full">
+				Donate to The Cam Neely Foundation
+		</button>
+	</Link>
+</div>
+	
 
 </Layout>
