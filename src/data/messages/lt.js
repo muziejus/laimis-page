@@ -4,9 +4,10 @@ module.exports = {
   'builtWith': "Programuota",
   'gatsby': "biblioteka „Gatsby“.",
   "byWhom": "Sudėjo Laimio brolis Moacir P. Dizainą atliko Laimio dukterėčia Nia",
-  "menuTestimonials": "Atsiliepimai",
+  "menuTestimonials": "Atsiminimai",
   "menuArchive": "Archyvas",
   "menuJimmyFund": "Jimmy Fund",
   "menuCamNeelyFoundation": "Cam Neely Fondas",
+  "menuMemorial": "Atsisveikinimas",
   "laimisUHaulCaption": "Po ilgos kraustymo dienos, Laimis vistiek gerai nusiteikęs.",
 };

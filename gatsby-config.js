@@ -12,9 +12,13 @@ module.exports = {
         link: `/testimonials`,
       },
       {
-        name: `menuArchive`,
-        link: `/archive`,
+        name: `menuMemorial`,
+        link: `/memorial`,
       },
+      // {
+      //   name: `menuArchive`,
+      //   link: `/archive`,
+      // },
       {
         name: `menuJimmyFund`,
         link: `/jimmy-fund`,
