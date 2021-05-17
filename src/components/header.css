@@ -6,3 +6,7 @@ header h1 {
   font-family: "PT Serif", "ui-serif", "Georgia", "Times", "serif";
   @apply text-4xl font-bold text-background;
 }
+
+header h1:hover {
+  @apply underline;
+}

@@ -17,7 +17,7 @@ import { FormattedMessage, IntlProvider } from 'react-intl';
 import "./layout.css";
 // import 'intl';
 
-const Layout = ({ children, location, i18nMessages }) => {
+const Layout = ({ children, i18nMessages }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -32,7 +32,8 @@ const Layout = ({ children, location, i18nMessages }) => {
     }
   `)
 
-  const url = location.pathname;
+  let url = typeof window !== "undefined" ? window.location.pathname : ""
+
   const { langs, defaultLangKey } = data.site.siteMetadata.languages;
   // console.log(`location: ${location.pathname}`);
   const langKey = getCurrentLangKey(langs, defaultLangKey, url);
