@@ -4,7 +4,7 @@ import { FormattedMessage } from 'react-intl';
 
 import "./menu.css";
 
-const Menu = ({ url, langKey, location }) => {
+const Menu = ({ dropdown, url, langKey, location }) => {
   const data = useStaticQuery(graphql`
     query menuLinksQuery {
       site {
@@ -23,8 +23,11 @@ const Menu = ({ url, langKey, location }) => {
     urlPrefix = `/${langKey}`;
   }
 
+  const isDropdown = dropdown ? "dropdown-menu" : "menu";
+
+
   return (
-    <ul className="menu">
+    <ul className={isDropdown}>
       {data.site.siteMetadata.menuLinks.map((link) => {
         let className = "";
         if(url.includes(link.link)){

@@ -8,21 +8,25 @@ import DropdownMenu from "./dropdown-menu";
 import "./header.css";
 
 
-const Header = ({ url, langKey, langs }) => (
-  <header>
-    <h1>
-      <Link
-        to="/"
-      >
-        <FormattedMessage id="title" />
-      </Link>
-    </h1>
-    <div className="flex flex-row">
-      <Menu url={url} langKey={langKey} />
-      <DropdownMenu url={url} langKey={langKey} />
-    </div>
-  </header>
-)
+const Header = ({ url, langKey, langs }) => {
+  const dropdown = false;
+
+  return (
+    <header>
+      <h1>
+        <Link
+          to="/"
+        >
+          <FormattedMessage id="title" />
+        </Link>
+      </h1>
+      <div className="flex flex-row">
+        <Menu dropdown={dropdown} url={url} langKey={langKey} />
+        <DropdownMenu url={url} langKey={langKey} />
+      </div>
+    </header>
+  )
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

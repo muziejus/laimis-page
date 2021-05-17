@@ -53,7 +53,7 @@ const Layout = ({ children, location, i18nMessages }) => {
         <StaticImage src="../images/laimis-uhaul.jpg" alt="Laimis smiling broadly." 
         placeholder="blurred"
         />
-        <p><FormattedMessage id="laimisUHaulCaption" /></p>
+        <p className="text-sm md:text-base"><FormattedMessage id="laimisUHaulCaption" /></p>
         </aside>
       </main>
     <Footer langs={langsMenu} />

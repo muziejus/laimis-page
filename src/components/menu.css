@@ -1,6 +1,6 @@
 ul.menu {
   font-family: "PT Serif", "ui-serif", "Georgia", "Times", "serif";
-  @apply flex-row hidden text-background space-x-2 md:flex;
+  @apply hidden text-background space-x-2 md:flex md:flex-row;
 }
 
 ul.menu li {
@@ -10,3 +10,21 @@ ul.menu li {
 ul.menu li:hover, ul.menu li.active {
   @apply bg-primary-800;
 }
+
+ul.dropdown-menu {
+  font-family: "PT Serif", "ui-serif", "Georgia", "Times", "serif";
+  @apply fixed right-0 z-10 flex flex-col shadow text-secondary-500 md:hidden top-20 bg-background space-y-2;
+
+}
+
+ul.dropdown-menu li {
+  @apply px-8 py-2;
+}
+
+ul.dropdown-menu li:hover, ul.dropdown-menu li.active {
+  @apply bg-primary-200 text-background;
+}
+
+
+
+
