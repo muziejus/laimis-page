@@ -4,7 +4,7 @@ body {
 }
 
 main {
-  @apply flex flex-col w-screen px-10 py-8 md:grid md:grid-cols-2 gap-8;
+  @apply flex flex-col w-screen px-4 py-8 md:px-10 md:grid md:grid-cols-2 gap-8;
 }
 
 main article {
@@ -16,7 +16,7 @@ main article h1 {
 }
 
 main article p {
-  @apply pb-4;
+  @apply pb-4 text-justify md:text-left;
 }
 
 main article a {

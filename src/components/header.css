@@ -1,10 +1,10 @@
 header {
-  @apply flex flex-row items-center justify-between w-screen px-10 py-4 bg-primary-500;
+  @apply flex flex-row items-center justify-between w-screen p-4 md:px-10 bg-primary-500;
 }
 
 header h1 {
   font-family: "PT Serif", "ui-serif", "Georgia", "Times", "serif";
-  @apply text-4xl font-bold text-background;
+  @apply text-2xl font-bold md:text-4xl text-background;
 }
 
 header h1:hover {
