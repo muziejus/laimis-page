@@ -6,6 +6,26 @@ module.exports = {
     description: `Remembering our beloved Laimis Jurgis Arcilio de Sá Pereira, 1984–2021`,
     author: `@muziejus`,
     languages,
+    pictures: [
+      {
+        path: `/`,
+        picture: `laimis-uhaul.jpg`,
+        alt: `Laimis smiling broadly.`,
+        captionKey: `laimisUHaulCaption`,
+      },
+      {
+        path: `/memorial`,
+        picture: `laimis-fort-taber.jpg`,
+        alt: `Laimis at Fort Taber in 2020.`,
+        captionKey: `laimisFortTaberCaption`,
+      },
+      {
+        path: `/testimonials`,
+        picture: `laimis-thinking.jpg`,
+        alt: `Laimis in thought.`,
+        captionKey: `laimisThoughtCaption`,
+      },
+    ],
     menuLinks: [
       {
         name: `menuTestimonials`,
