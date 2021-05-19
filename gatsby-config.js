@@ -2,6 +2,7 @@ const languages = require("./src/data/languages");
 
 module.exports = {
   siteMetadata: {
+    siteUrl: `https://laimis.desapereira.com`,
     title: `In Memory of Laimis`,
     description: `Remembering our beloved Laimis Jurgis Arcilio de Sá Pereira, 1984–2021`,
     author: `@muziejus`,
@@ -51,7 +52,6 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-postcss`,
-    `gatsby-plugin-mdx`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {
@@ -85,16 +85,29 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
-    {
-      resolve: "gatsby-plugin-i18n",
-      options: {
-        langKeyDefault: "en",
-        useLangKeyLayout: true,
-        // langKeyForNull: "en",
-        prefixDefault: false,
-      }
-    },
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [`.mdx`, `.md`],
+        defaultLayouts: {
+          default: require.resolve(`./src/components/layout.js`),
+        },
+      },
+    },
+    {
+      resolve: `gatsby-theme-i18n`,
+      options: {
+        defaultLang: `en`,
+        configPath: require.resolve(`./i18n/config.json`),
+      },
+    },
+    {
+      resolve: `gatsby-theme-i18n-lingui`,
+      options: {
+        localeDir: `./i18n/lingui`,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

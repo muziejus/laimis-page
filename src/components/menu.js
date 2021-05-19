@@ -1,10 +1,9 @@
 import * as React from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
-import { FormattedMessage } from 'react-intl';
 
 import "./menu.css";
 
-const Menu = ({ dropdown, url, langKey, location }) => {
+const Menu = ({ dropdown, langKey }) => {
   const data = useStaticQuery(graphql`
     query menuLinksQuery {
       site {
@@ -30,14 +29,14 @@ const Menu = ({ dropdown, url, langKey, location }) => {
     <ul className={isDropdown}>
       {data.site.siteMetadata.menuLinks.map((link) => {
         let className = "";
-        if(url.includes(link.link)){
-          className = "active";
-        }
+        // if(url.includes(link.link)){
+        //   className = "active";
+        // }
 
         return (
           <li key={link.name} className={className}>
             <Link to={urlPrefix + link.link} >
-              <FormattedMessage id={link.name} />
+              {link.name}
             </Link>
           </li>
         )

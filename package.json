@@ -5,12 +5,13 @@
   "version": "0.1.0",
   "author": "Moacir P. de Sá Pereira (github@moacir.moacir.com)",
   "dependencies": {
+    "@lingui/core": "^3.9.0",
+    "@lingui/react": "^3.9.0",
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
     "gatsby": "^3.4.1",
     "gatsby-plugin-gatsby-cloud": "^2.4.1",
     "gatsby-plugin-google-fonts-v2": "^0.0.6",
-    "gatsby-plugin-i18n": "^1.0.1",
     "gatsby-plugin-image": "^1.4.0",
     "gatsby-plugin-manifest": "^3.4.0",
     "gatsby-plugin-mdx": "^2.5.0",
@@ -19,19 +20,28 @@
     "gatsby-plugin-react-svg": "^3.0.1",
     "gatsby-plugin-sharp": "^3.4.1",
     "gatsby-source-filesystem": "^3.4.0",
+    "gatsby-theme-i18n": "^2.0.0",
+    "gatsby-theme-i18n-lingui": "^2.0.0",
     "gatsby-transformer-sharp": "^3.4.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-helmet": "^6.1.0",
-    "react-intl": "^5.17.6"
+    "react-helmet": "^6.1.0"
   },
   "devDependencies": {
+    "@lingui/cli": "^3.9.0",
+    "@lingui/macro": "^3.9.0",
     "autoprefixer": "^10.2.5",
+    "babel-preset-gatsby": "^1.5.0",
     "gatsby-plugin-postcss": "^4.5.0",
     "postcss": "^8.2.15",
     "prettier": "2.2.1",
     "tailwindcss": "^2.1.2"
+  },
+  "peerDependencies": {
+    "@babel/core": "^7.14.3",
+    "graphql": "^15.5.0",
+    "webpack": "^5.37.0"
   },
   "keywords": [
     "gatsby"
@@ -44,6 +54,8 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
+    "extract": "lingui extract",
+    "compile": "lingui compile",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "repository": {

@@ -1,0 +1,14 @@
+{
+  "locales": ["en", "pt", "lt"],
+  "catalogs": [
+    {
+      "path": "<rootDir>/i18n/lingui/{locale}/messages",
+      "include": ["<rootDir>/src"],
+      "exclude": ["**/node_modules/**"]
+    }
+  ],
+  "format": "po",
+  "extractBabelOptions": {
+    "presets": ["babel-preset-gatsby"]
+  }
+}

@@ -2,7 +2,7 @@ import * as React from "react"
 import Menu from "./menu";
 import Icon from "../assets/menu.svg";
 
-export default function DropdownMenu({ url, langKey }) {
+export default function DropdownMenu() {
   const [menuShown, setMenuShown] = React.useState(false);
 
   const toggleMenu = e => {
@@ -21,7 +21,7 @@ export default function DropdownMenu({ url, langKey }) {
         <Icon />
       </button>
       <div className={showMenu} >
-        <Menu dropdown={dropdown} url={url} langKey={langKey} />
+        <Menu dropdown={dropdown} />
       </div>
     </>
   );
