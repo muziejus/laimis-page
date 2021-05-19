@@ -11,7 +11,10 @@ import "./layout.css";
 //   a: MdxLink,
 // }
 
-const Layout = ({ children }) => (
+// const Layout = ({ children, pageContext }) => (
+const Layout = (props) => {
+  console.log(props);
+  return (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -40,11 +43,11 @@ const Layout = ({ children }) => (
       <h1>{data.site.siteMetadata.title}</h1>
       <p>a paragraph.</p>
       <div>
-        {children}
+        {props.children}
       </div>
     </>
     )}
   />
-)
+)}
 
 export default Layout
