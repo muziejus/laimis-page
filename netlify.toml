@@ -1,0 +1,8 @@
+[build]
+  command = "gatsby build"
+  publish = "public"
+[dev]
+  command = "gatsby develop"
+[template.environment]
+  NODE_ENV = "production"
+
