@@ -1,5 +1,5 @@
 import * as React from "react"
-import { navigate, graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import { useLocalization } from "gatsby-theme-i18n"
 import Header from "./header"
 import Footer from "./footer"
@@ -34,7 +34,10 @@ const Layout = ({ children }) => {
     }`);
 
   const document = data.allMdx.nodes.find(node => node.frontmatter.pathname === pathname && node.frontmatter.locale === locale);
-  const image = data.allFile.nodes.find(node => node.absolutePath.includes(document.frontmatter.photo))
+  let image = ""
+  if (document) {
+    image = data.allFile.nodes.find(node => node.absolutePath.includes(document.frontmatter.photo))
+  }
 
   return (
     <>

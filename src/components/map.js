@@ -14,18 +14,22 @@ const Map = ({ children, className, ...rest }) => {
     ...rest,
   };
 
-  return (
-    <div className={mapClassName}>
-      <MapContainer {...mapSettings}>
-        {children}
-        <TileLayer
-          attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        />
-        <ZoomControl position="bottomright" />
-      </MapContainer>
-    </div>
-  );
+  if(typeof window !== "undefined") {
+    return (
+      <div className={mapClassName}>
+        <MapContainer {...mapSettings}>
+          {children}
+          <TileLayer
+            attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          />
+          <ZoomControl position="bottomright" />
+        </MapContainer>
+      </div>
+    );
+  }
+
+  return null;
 };
   
 export default Map;
