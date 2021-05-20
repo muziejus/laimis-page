@@ -1,0 +1,10 @@
+.map {
+  height: 400px;
+  @apply relative py-6;
+}
+
+.map-base {
+  width: 100%;
+  height: 100%;
+}
+

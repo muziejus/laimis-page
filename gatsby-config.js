@@ -7,48 +7,6 @@ module.exports = {
     description: `Remembering our beloved Laimis Jurgis Arcilio de Sá Pereira, 1984–2021`,
     author: `@muziejus`,
     languages,
-    pictures: [
-      {
-        path: `/`,
-        picture: `laimis-uhaul.jpg`,
-        alt: `Laimis smiling broadly.`,
-        captionKey: `laimisUHaulCaption`,
-      },
-      {
-        path: `/memorial`,
-        picture: `laimis-fort-taber.jpg`,
-        alt: `Laimis at Fort Taber in 2020.`,
-        captionKey: `laimisFortTaberCaption`,
-      },
-      {
-        path: `/testimonials`,
-        picture: `laimis-thinking.jpg`,
-        alt: `Laimis in thought.`,
-        captionKey: `laimisThoughtCaption`,
-      },
-    ],
-    menuLinks: [
-      {
-        name: `menuTestimonials`,
-        link: `/testimonials`,
-      },
-      {
-        name: `menuMemorial`,
-        link: `/memorial`,
-      },
-      // {
-      //   name: `menuArchive`,
-      //   link: `/archive`,
-      // },
-      {
-        name: `menuJimmyFund`,
-        link: `/jimmy-fund`,
-      },
-      {
-        name: `menuCamNeelyFoundation`,
-        link: `/cam-neely-foundation`,
-      },
-    ],
   },
   plugins: [
     `gatsby-plugin-postcss`,
@@ -122,6 +80,7 @@ module.exports = {
         localeDir: `./i18n/lingui`,
       },
     },
+    `gatsby-plugin-react-leaflet`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
