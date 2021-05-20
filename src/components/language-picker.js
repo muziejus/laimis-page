@@ -6,8 +6,6 @@ import "./language-picker.css"
 export default function LanguagePicker() {
   const { locale } = useLocalization();
 
-  console.log(locale);
-
   return (
     <div className="language-picker">
       { /(pt|lt)/.test(locale) &&
