@@ -1,16 +1,18 @@
 import * as React from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import { Trans } from "@lingui/macro"
 import Testimonial from "./testimonial";
 
 export default function TestimonialsList() {
   const data = useStaticQuery(graphql`
     query TestmonialsQuery {
-      allMdx(filter: {fileAbsolutePath: {regex: "/src.testimonial/"}}) {
+      allMdx(
+        filter: {fileAbsolutePath: {regex: "/src.testimonial/"}},
+        sort: { order: DESC, fields: [frontmatter___date] }
+      ) {
         nodes {
           id
           frontmatter {
-            date
+            date(formatString: "YYYY-MM-DD")
             author
           }
           body
@@ -20,7 +22,7 @@ export default function TestimonialsList() {
   )
 
   return(
-    <section>
+    <section className="pb-4">
       {data.allMdx.nodes.map(node => (
         <Testimonial key={node.id} testimonial={node} />
       ))}
