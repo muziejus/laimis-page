@@ -23,11 +23,11 @@ msgstr "Cam Neely Foundation"
 
 #: src/pages/index.js:20
 msgid "Donate to The Cam Neely Foundation"
-msgstr "Aukokite Cam Neely Fondui"
+msgstr "Paremti Cam Neely Fondą"
 
 #: src/pages/index.js:15
 msgid "Donate to the Jimmy Fund"
-msgstr "Aukokite Jimmy Fondui"
+msgstr "Paremti Jimmy Fondą"
 
 #: src/components/header.js:20
 msgid "In Memory of Laimis"
