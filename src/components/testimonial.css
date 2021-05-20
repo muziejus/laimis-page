@@ -1,2 +1,11 @@
 .testimonial {
+  @apply pt-4 border-0 border-t border-secondary-500;
+}
+
+.testimonial .author, .testimonial .date {
+  @apply p-0 text-sm;
+}
+
+.testimonial .date {
+  @apply pb-4;
 }

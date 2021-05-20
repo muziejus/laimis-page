@@ -8,6 +8,7 @@ export default function TestimonialsList() {
     query TestmonialsQuery {
       allMdx(filter: {fileAbsolutePath: {regex: "/src.testimonial/"}}) {
         nodes {
+          id
           frontmatter {
             date
             author
@@ -21,7 +22,7 @@ export default function TestimonialsList() {
   return(
     <section>
       {data.allMdx.nodes.map(node => (
-        <Testimonial testimonial={node} />
+        <Testimonial key={node.id} testimonial={node} />
       ))}
     </section>
   
