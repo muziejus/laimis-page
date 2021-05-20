@@ -21,7 +21,15 @@ msgstr "Built with <0>Gatsby</0> by Laimis’s brother Moacir P. with art direct
 msgid "Cam Neely Foundation"
 msgstr "Cam Neely Foundation"
 
-#: src/components/header.js:19
+#: src/pages/index.js:20
+msgid "Donate to The Cam Neely Foundation"
+msgstr "Donate to The Cam Neely Foundation"
+
+#: src/pages/index.js:15
+msgid "Donate to the Jimmy Fund"
+msgstr "Donate to the Jimmy Fund"
+
+#: src/components/header.js:20
 msgid "In Memory of Laimis"
 msgstr "In Memory of Laimis"
 
@@ -36,7 +44,3 @@ msgstr "Testimonials"
 #: src/components/menu.js:19
 msgid "Valediction"
 msgstr "Valediction"
-
-#: src/components/menu.js:35
-#~ msgid "{0}"
-#~ msgstr ""

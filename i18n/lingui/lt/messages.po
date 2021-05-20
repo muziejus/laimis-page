@@ -21,7 +21,15 @@ msgstr "Sudėjo Laimio brolis Moacir P. su <0>Gatsby</0> biblioteka. Dizainą at
 msgid "Cam Neely Foundation"
 msgstr "Cam Neely Foundation"
 
-#: src/components/header.js:19
+#: src/pages/index.js:20
+msgid "Donate to The Cam Neely Foundation"
+msgstr "Aukokite Cam Neely Fondui"
+
+#: src/pages/index.js:15
+msgid "Donate to the Jimmy Fund"
+msgstr "Aukokite Jimmy Fondui"
+
+#: src/components/header.js:20
 msgid "In Memory of Laimis"
 msgstr "Laimio atiminimui"
 
@@ -36,7 +44,3 @@ msgstr "Atsiminimai"
 #: src/components/menu.js:19
 msgid "Valediction"
 msgstr "Atsisveikinimas"
-
-#: src/components/menu.js:35
-#~ msgid "{0}"
-#~ msgstr ""
