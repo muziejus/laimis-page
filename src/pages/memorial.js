@@ -21,7 +21,7 @@ const Memorial = () => {
   const stMarysDate = i18n.date("2021-06-26 10:00 EDT", dateOptions);
   const stPetersDate = i18n.date("2021-06-27 10:30 EDT", dateOptions);
   return (
-    <Layout>
+    <Layout passedPath={"/memorial"}>
       <Seo title="Memorial" />
       <h2><Trans>Memorial Mass at St. Mary’s Dartmouth</Trans></h2>
       

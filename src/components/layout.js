@@ -6,9 +6,16 @@ import Footer from "./footer"
 import Main from "./main"
 import "./layout.css";
 
-const Layout = ({ children }) => {
-  let pathname = typeof window !== "undefined" ? window.location.pathname : "";
+const Layout = ({ passedPath, children }) => {
   const { locale } = useLocalization();
+  let pathname = "";
+  if(passedPath) {
+    if(locale == "en") {
+      pathname = passedPath;
+    } else {
+      pathname = `/${locale}${passedPath}`;
+    }
+  }
   const data = useStaticQuery(graphql`
     query MdxQuery {
       allMdx{

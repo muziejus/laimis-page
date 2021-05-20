@@ -5,7 +5,7 @@ import TestimonialsList from "../components/testimonials-list"
 
 const Testimonials = () => {
   return (
-    <Layout>
+    <Layout passedPath={"/testimonials"}>
       <Seo title="Testimonials" />
       <TestimonialsList />
     </Layout>

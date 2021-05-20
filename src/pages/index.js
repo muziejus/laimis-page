@@ -7,7 +7,7 @@ import Seo from "../components/seo"
 
 const Index = () => {
   return (
-    <Layout>
+    <Layout passedPath={"/"}>
       <Seo title="Home" />
       <div className="flex flex-row items-stretch w-full space-x-4">
         <Link to="/jimmy-fund" className="w-1/2">

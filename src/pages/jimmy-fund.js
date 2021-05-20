@@ -5,7 +5,7 @@ import Seo from "../components/seo"
 
 const JimmyFund = () => {
   return (
-    <Layout>
+    <Layout passedPath={"/jimmy-fund"}>
       <Seo title="Jimmy Fund" />
     </Layout>
   );
