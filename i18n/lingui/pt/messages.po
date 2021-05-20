@@ -15,7 +15,7 @@ msgstr ""
 
 #: src/components/footer.js:8
 msgid "Built with <0>Gatsby</0> by Laimis’s brother Moacir with art direction by Laimis’s niece Nia."
-msgstr "Criado com <0>Gatsby</0> por Moacir P., o irmão do Laimis. Projetado por Nia, a sobrinha do Laimis."
+msgstr "Criado com <0>Gatsby</0> por Moacir P., o irmão de Laimis. Projetado por Nia, a sobrinha de Laimis."
 
 #: src/components/menu.js:29
 msgid "Cam Neely Foundation"
