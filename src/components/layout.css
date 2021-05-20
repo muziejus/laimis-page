@@ -5,7 +5,7 @@ body {
 
 button.button {
   font-family: "PT Serif", "ui-serif", "Georgia", "Times", "serif";
-  @apply px-4 py-2 border rounded bg-primary-500 text-background border-primary-900 ;
+  @apply px-3 py-2 border rounded bg-primary-500 text-background border-primary-900 ;
 }
 
 button.button:hover {

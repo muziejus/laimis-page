@@ -1,6 +1,6 @@
 div.language-picker {
   font-family: "PT Serif", "ui-serif", "Georgia", "Times", "serif";
-  @apply flex flex-row text-2xl;
+  @apply flex flex-row px-2 text-2xl md:px-0;
 }
 
 div.language-picker a {

@@ -17,7 +17,7 @@ export default function DropdownMenu() {
     <>
       <button 
         onClick={toggleMenu}
-        className="block md:hidden button">
+        className="block mr-2 md:hidden button">
         <Icon />
       </button>
       <div className={showMenu} >

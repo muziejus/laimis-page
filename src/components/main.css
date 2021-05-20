@@ -1,13 +1,17 @@
-main {
-  @apply flex flex-col w-screen px-4 py-8 md:px-10 md:grid md:grid-cols-2 gap-8;
-}
-
 main article {
-  @apply order-last w-full md:order-first;
+  @apply flex flex-col w-screen px-4 pb-6 md:px-10 md:grid md:grid-cols-2 gap-2 md:gap-8 md:pb-0;
 }
 
-main article h1 {
-  @apply pb-6 text-3xl font-bold;
+main article > section {
+  @apply order-last w-full pr-4 md:order-first md:pr-0;
+}
+
+main article > aside {
+  @apply pr-4 md:pr-0
+}
+
+main h1 {
+  @apply px-4 py-4 text-3xl font-bold md:px-10;
 }
 
 main article p {

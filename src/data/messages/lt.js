@@ -9,5 +9,4 @@ module.exports = {
   "menuJimmyFund": "Jimmy Fund",
   "menuCamNeelyFoundation": "Cam Neely Fondas",
   "menuMemorial": "Atsisveikinimas",
-  "laimisUHaulCaption": "Po ilgos kraustymo dienos, Laimis vistiek gerai nusiteikęs.",
 };

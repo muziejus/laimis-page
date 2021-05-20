@@ -6,24 +6,29 @@ import "./language-picker.css"
 export default function LanguagePicker() {
   const { locale } = useLocalization();
 
+  console.log(locale);
+
   return (
     <div className="language-picker">
       { /(pt|lt)/.test(locale) &&
         <Link to="/">
+          <span role="img" aria-label="English language">
           🇺🇸
-          <span className="sr-only">EN</span>
+          </span>
         </Link>
       }
       { /(pt|en)/.test(locale) &&
         <Link to="/lt/">
+          <span role="img" aria-label="Lithuanian language">
           🇱🇹
-          <span className="sr-only">LT</span>
+          </span>
         </Link>
       }
       { /(en|lt)/.test(locale) &&
         <Link to="/pt/">
+          <span role="img" aria-label="Portuguese language">
           🇧🇷
-          <span className="sr-only">PT</span>
+          </span>
         </Link>
       }
     </div>

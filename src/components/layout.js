@@ -33,13 +33,8 @@ const Layout = ({ children }) => {
       }
     }`);
 
-  console.log(data);
   const document = data.allMdx.nodes.find(node => node.frontmatter.pathname === pathname && node.frontmatter.locale === locale);
   const image = data.allFile.nodes.find(node => node.absolutePath.includes(document.frontmatter.photo))
-
-	if(!document) {
-		return navigate("/");
-	}
 
   return (
     <>
