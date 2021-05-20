@@ -6,3 +6,37 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
 "Language: en\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#: src/components/footer.js:8
+msgid "Built with <0>Gatsby</0> by Laimis’s brother Moacir with art direction by Laimis’s niece Nia."
+msgstr "Built with <0>Gatsby</0> by Laimis’s brother Moacir P. with art direction by Laimis’s niece Nia."
+
+#: src/components/menu.js:29
+msgid "Cam Neely Foundation"
+msgstr "Cam Neely Foundation"
+
+#: src/components/header.js:19
+msgid "In Memory of Laimis"
+msgstr "In Memory of Laimis"
+
+#: src/components/menu.js:24
+msgid "Jimmy Fund"
+msgstr "Jimmy Fund"
+
+#: src/components/menu.js:14
+msgid "Testimonials"
+msgstr "Testimonials"
+
+#: src/components/menu.js:19
+msgid "Valediction"
+msgstr "Valediction"
+
+#: src/components/menu.js:35
+#~ msgid "{0}"
+#~ msgstr ""

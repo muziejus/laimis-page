@@ -1,0 +1,12 @@
+div.language-picker {
+  font-family: "PT Serif", "ui-serif", "Georgia", "Times", "serif";
+  @apply flex flex-row text-2xl;
+}
+
+div.language-picker a {
+  @apply block px-1 py-2 rounded text-background;
+}
+
+div.language-picker a:hover {
+  @apply bg-primary-800;
+}

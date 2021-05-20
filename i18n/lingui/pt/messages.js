@@ -1,5 +1,1 @@
-/*eslint-disable*/ module.exports = {
-  messages: {
-    "Hello World": "Oi, mundo",
-  }
-}
+/*eslint-disable*/module.exports={messages:{"Built with <0>Gatsby</0> by Laimis’s brother Moacir with art direction by Laimis’s niece Nia.":"Criado com <0>Gatsby</0> por Moacir P., o irmão do Laimis. Projetado por Nia, a sobrinha do Laimis.","Cam Neely Foundation":"Fundação Cam Neely","In Memory of Laimis":"Em memória de Laimis","Jimmy Fund":"Jimmy Fund","Testimonials":"Depoimentos","Valediction":"Despedida","{0}":[["0"]]}};

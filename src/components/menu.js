@@ -1,46 +1,34 @@
 import * as React from "react"
-import { Link, useStaticQuery, graphql } from "gatsby"
+import { Trans } from "@lingui/macro"
+import { LocalizedLink as Link } from "gatsby-theme-i18n"
 
 import "./menu.css";
 
-const Menu = ({ dropdown, langKey }) => {
-  const data = useStaticQuery(graphql`
-    query menuLinksQuery {
-      site {
-        siteMetadata {
-          menuLinks {
-            name
-            link
-          }
-        }
-      }
-    }
-  `);
-
-  let urlPrefix = "";
-  if(langKey !== "en"){
-    urlPrefix = `/${langKey}`;
-  }
-
+const Menu = ({ dropdown }) => {
   const isDropdown = dropdown ? "dropdown-menu" : "menu";
-
-
+  let className = ""; // as opposed to "active"
   return (
     <ul className={isDropdown}>
-      {data.site.siteMetadata.menuLinks.map((link) => {
-        let className = "";
-        // if(url.includes(link.link)){
-        //   className = "active";
-        // }
-
-        return (
-          <li key={link.name} className={className}>
-            <Link to={urlPrefix + link.link} >
-              {link.name}
-            </Link>
-          </li>
-        )
-      })}
+      <li className={className}>
+        <Link to="/testimonials">
+          <Trans>Testimonials</Trans>
+        </Link>
+      </li>
+      <li className={className}>
+        <Link to="/memorial">
+          <Trans>Valediction</Trans>
+        </Link>
+      </li>
+      <li className={className}>
+        <Link to="/jimmy-fund">
+          <Trans>Jimmy Fund</Trans>
+        </Link>
+      </li>
+      <li className={className}>
+        <Link to="/cam-neely-foundation">
+          <Trans>Cam Neely Foundation</Trans>
+        </Link>
+      </li>
     </ul>
   )
 }

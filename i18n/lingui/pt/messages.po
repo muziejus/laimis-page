@@ -6,3 +6,37 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
 "Language: pt\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#: src/components/footer.js:8
+msgid "Built with <0>Gatsby</0> by Laimis’s brother Moacir with art direction by Laimis’s niece Nia."
+msgstr "Criado com <0>Gatsby</0> por Moacir P., o irmão do Laimis. Projetado por Nia, a sobrinha do Laimis."
+
+#: src/components/menu.js:29
+msgid "Cam Neely Foundation"
+msgstr "Fundação Cam Neely"
+
+#: src/components/header.js:19
+msgid "In Memory of Laimis"
+msgstr "Em memória de Laimis"
+
+#: src/components/menu.js:24
+msgid "Jimmy Fund"
+msgstr "Jimmy Fund"
+
+#: src/components/menu.js:14
+msgid "Testimonials"
+msgstr "Depoimentos"
+
+#: src/components/menu.js:19
+msgid "Valediction"
+msgstr "Despedida"
+
+#: src/components/menu.js:35
+#~ msgid "{0}"
+#~ msgstr ""

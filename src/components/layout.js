@@ -1,53 +1,55 @@
 import * as React from "react"
-import { StaticQuery, graphql } from "gatsby"
-// import { MDXProvider } from "@mdx-js/react"
-// import { MdxLink } from "gatsby-theme-i18n"
-// import Header from "./header"
-// import Footer from "./footer"
-// import Main from "./main"
+import { navigate, graphql, useStaticQuery } from "gatsby"
+import { useLocalization } from "gatsby-theme-i18n"
+import Header from "./header"
+import Footer from "./footer"
+import Main from "./main"
 import "./layout.css";
 
-// const components = {
-//   a: MdxLink,
-// }
-
-// const Layout = ({ children, pageContext }) => (
-const Layout = (props) => {
-  console.log(props);
-  return (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
+const Layout = ({ children }) => {
+  let pathname = typeof window !== "undefined" ? window.location.pathname : "";
+  const { locale } = useLocalization();
+  const data = useStaticQuery(graphql`
+    query MdxQuery {
+      allMdx{
+        nodes {
+          frontmatter {
             title
+            pathname
+            locale
+            photo
+            caption
+          }
+          body
+        }
+      }
+      allFile(filter: {absolutePath: {regex: "/images/"}}) {
+        nodes {
+          absolutePath
+          childImageSharp {
+            gatsbyImageData
           }
         }
       }
-    `}
-    render={ data => (
+    }`);
 
-  // return (
-  //   <React.Fragment>
-  //     <Header />
-  //     <Main >
-  //       <MDXProvider components={components}>
-  //         {children}
-  //       </MDXProvider>
-  //     </Main>
-  //     <Footer/>
-  //   </React.Fragment>
-  // )
-  //
+  console.log(data);
+  const document = data.allMdx.nodes.find(node => node.frontmatter.pathname === pathname && node.frontmatter.locale === locale);
+  const image = data.allFile.nodes.find(node => node.absolutePath.includes(document.frontmatter.photo))
+
+	if(!document) {
+		return navigate("/");
+	}
+
+  return (
     <>
-      <h1>{data.site.siteMetadata.title}</h1>
-      <p>a paragraph.</p>
-      <div>
-        {props.children}
-      </div>
+      <Header />
+      <Main document={document} image={image}>
+        {children}
+      </Main>
+      <Footer/>
     </>
-    )}
-  />
-)}
+  )
+}
 
 export default Layout
