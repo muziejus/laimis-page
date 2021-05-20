@@ -55,11 +55,11 @@ msgstr "Jimmy Fund"
 
 #: src/pages/memorial.js:26
 msgid "Memorial Mass at St. Mary’s Dartmouth"
-msgstr "Šv. Mišios Šv. Marijos bažnyčioje Dartmouth-e"
+msgstr "Šv. Mišios Šv. Marijos bažnyčioje Dartmute"
 
 #: src/pages/memorial.js:42
 msgid "Memorial Mass at St. Peters’s South Boston"
-msgstr "Šv. Mišios Šv. Petro parapijoje South Bostone"
+msgstr "Šv. Mišios Šv. Petro parapijoje Saut Bostone"
 
 #: src/components/menu.js:14
 msgid "Testimonials"
