@@ -13,6 +13,10 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
+#: src/components/testimonial.js:11
+msgid "Author"
+msgstr "Autor/a"
+
 #: src/components/footer.js:8
 msgid "Built with <0>Gatsby</0> by Laimis’s brother Moacir with art direction by Laimis’s niece Nia."
 msgstr "Criado com <0>Gatsby</0> por Moacir P., o irmão de Laimis. Projetado por Nia, a sobrinha de Laimis."
@@ -20,6 +24,10 @@ msgstr "Criado com <0>Gatsby</0> por Moacir P., o irmão de Laimis. Projetado po
 #: src/components/menu.js:29
 msgid "Cam Neely Foundation"
 msgstr "Fundação Cam Neely"
+
+#: src/components/testimonial.js:12
+msgid "Date"
+msgstr "Data"
 
 #: src/pages/index.js:20
 msgid "Donate to The Cam Neely Foundation"
