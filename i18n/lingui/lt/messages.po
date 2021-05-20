@@ -13,7 +13,15 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/components/testimonial.js:11
+#: src/pages/memorial.js:30
+msgid "<0>St. Mary’s Catholic Church</0>, 789 Dartmouth St., South Dartmouth, MA"
+msgstr "<0>Šv. Marijos katalikų bažnyčia</0>, 789 Dartmouth St., South Dartmouth, MA"
+
+#: src/pages/memorial.js:46
+msgid "<0>St. Peter’s Lithuanian Parish</0>, 75 Flaherty Way, South Boston"
+msgstr "<0>Šv. Petro lietuvių parapija</0>, 75 Flaherty Way, South Boston"
+
+#: src/components/testimonial.js:12
 msgid "Author"
 msgstr "Autorius/ė"
 
@@ -25,7 +33,7 @@ msgstr "Sudėjo Laimio brolis Moacir P. su <0>Gatsby</0> biblioteka. Dizainą at
 msgid "Cam Neely Foundation"
 msgstr "Cam Neely Foundation"
 
-#: src/components/testimonial.js:12
+#: src/components/testimonial.js:13
 msgid "Date"
 msgstr "Data"
 
@@ -44,6 +52,14 @@ msgstr "Laimio atiminimui"
 #: src/components/menu.js:24
 msgid "Jimmy Fund"
 msgstr "Jimmy Fund"
+
+#: src/pages/memorial.js:26
+msgid "Memorial Mass at St. Mary’s Dartmouth"
+msgstr "Šv. Mišios Šv. Marijos bažnyčioje Dartmouth-e"
+
+#: src/pages/memorial.js:42
+msgid "Memorial Mass at St. Peters’s South Boston"
+msgstr "Šv. Mišios Šv. Petro parapijoje South Bostone"
 
 #: src/components/menu.js:14
 msgid "Testimonials"

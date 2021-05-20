@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2021-05-18 14:51-0400\n"
+"POT-Creation-Date: 2021-05-20 16:34-0400\n"
 "Mime-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -13,7 +13,15 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/components/testimonial.js:11
+#: src/pages/memorial.js:30
+msgid "<0>St. Mary’s Catholic Church</0>, 789 Dartmouth St., South Dartmouth, MA"
+msgstr "<0>St. Mary’s Catholic Church</0>, 789 Dartmouth St., South Dartmouth, MA"
+
+#: src/pages/memorial.js:46
+msgid "<0>St. Peter’s Lithuanian Parish</0>, 75 Flaherty Way, South Boston"
+msgstr "<0>St. Peter’s Lithuanian Parish</0>, 75 Flaherty Way, South Boston"
+
+#: src/components/testimonial.js:12
 msgid "Author"
 msgstr "Author"
 
@@ -25,7 +33,7 @@ msgstr "Built with <0>Gatsby</0> by Laimis’s brother Moacir P. with art direct
 msgid "Cam Neely Foundation"
 msgstr "Cam Neely Foundation"
 
-#: src/components/testimonial.js:12
+#: src/components/testimonial.js:13
 msgid "Date"
 msgstr "Date"
 
@@ -44,6 +52,14 @@ msgstr "In Memory of Laimis"
 #: src/components/menu.js:24
 msgid "Jimmy Fund"
 msgstr "Jimmy Fund"
+
+#: src/pages/memorial.js:26
+msgid "Memorial Mass at St. Mary’s Dartmouth"
+msgstr "Memorial Mass at St. Mary’s Dartmouth"
+
+#: src/pages/memorial.js:42
+msgid "Memorial Mass at St. Peters’s South Boston"
+msgstr "Memorial Mass at St. Peters’s South Boston"
 
 #: src/components/menu.js:14
 msgid "Testimonials"

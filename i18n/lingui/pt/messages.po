@@ -13,7 +13,15 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/components/testimonial.js:11
+#: src/pages/memorial.js:30
+msgid "<0>St. Mary’s Catholic Church</0>, 789 Dartmouth St., South Dartmouth, MA"
+msgstr ""
+
+#: src/pages/memorial.js:46
+msgid "<0>St. Peter’s Lithuanian Parish</0>, 75 Flaherty Way, South Boston"
+msgstr ""
+
+#: src/components/testimonial.js:12
 msgid "Author"
 msgstr "Autor/a"
 
@@ -25,7 +33,7 @@ msgstr "Criado com <0>Gatsby</0> por Moacir P., o irmão de Laimis. Projetado po
 msgid "Cam Neely Foundation"
 msgstr "Fundação Cam Neely"
 
-#: src/components/testimonial.js:12
+#: src/components/testimonial.js:13
 msgid "Date"
 msgstr "Data"
 
@@ -44,6 +52,14 @@ msgstr "Em memória de Laimis"
 #: src/components/menu.js:24
 msgid "Jimmy Fund"
 msgstr "Jimmy Fund"
+
+#: src/pages/memorial.js:26
+msgid "Memorial Mass at St. Mary’s Dartmouth"
+msgstr ""
+
+#: src/pages/memorial.js:42
+msgid "Memorial Mass at St. Peters’s South Boston"
+msgstr ""
 
 #: src/components/menu.js:14
 msgid "Testimonials"
