@@ -1,8 +1,9 @@
 const languages = require("./src/data/languages");
+const siteUrl = `https://laimis.desapereira.com`;
 
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://laimis.desapereira.com`,
+    siteUrl,
     title: `In Memory of Laimis`,
     description: `Remembering our beloved Laimis Jurgis Arcilio de Sá Pereira, 1984–2021`,
     author: `@muziejus`,
@@ -11,6 +12,12 @@ module.exports = {
   plugins: [
     `gatsby-plugin-postcss`,
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-react-helmet-canonical-urls`,
+      options: {
+        siteUrl,
+      },
+    },
     `gatsby-plugin-image`,
     {
       resolve: 'gatsby-plugin-react-svg',
