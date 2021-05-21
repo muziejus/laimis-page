@@ -1,8 +1,8 @@
 import * as React from "react"
 import { Trans } from "@lingui/macro"
 import { i18n } from "@lingui/core"
-import { Marker } from 'react-leaflet'
-import Map from "../components/map"
+// import { Marker } from 'react-leaflet'
+// import Map from "../components/map"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
@@ -35,9 +35,11 @@ const Memorial = () => {
           {stMarysDate}
         </li>
       </ul>
-      <Map center={[41.592004, -70.943337]} zoom={14}>
-        <Marker position={[41.592004, -70.943337]} />
-      </Map>
+    {
+      // <Map center={[41.592004, -70.943337]} zoom={14}>
+      //   <Marker position={[41.592004, -70.943337]} />
+      // </Map>
+    }
 
       <h2><Trans>Memorial Mass at St. Peters’s South Boston</Trans></h2>
       
@@ -51,9 +53,11 @@ const Memorial = () => {
           {stPetersDate}
         </li>
       </ul>
-      <Map center={[42.338692, -71.054990]} zoom={14}>
-        <Marker position={[42.338692, -71.054990]} />
-      </Map>
+    {
+      // <Map center={[42.338692, -71.054990]} zoom={14}>
+      //   <Marker position={[42.338692, -71.054990]} />
+      // </Map>
+    }
     </Layout>
   );
 }
