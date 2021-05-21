@@ -42,7 +42,7 @@ function Seo({ description, lang, meta, title }) {
         },
         {
           property: `og:title`,
-          content: title,
+          content: defaultTitle,
         },
         {
           property: `og:description`,
@@ -53,8 +53,20 @@ function Seo({ description, lang, meta, title }) {
           content: `website`,
         },
         {
+          property: `og:image:alt`,
+          content: `Laimis smiles broadly`,
+        },
+        {
+          property: `og:image`,
+          content: `https://laimis.desapereira.com/images/laimis-sharing.png`,
+        },
+        {
+          name: `twitter:image`,
+          content: `https://laimis.desapereira.com/images/laimis-sharing.png`,
+        },
+        {
           name: `twitter:card`,
-          content: `summary`,
+          content: `summary_large_image`,
         },
         {
           name: `twitter:creator`,
@@ -62,7 +74,7 @@ function Seo({ description, lang, meta, title }) {
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: defaultTitle,
         },
         {
           name: `twitter:description`,
