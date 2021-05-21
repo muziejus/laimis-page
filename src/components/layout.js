@@ -10,7 +10,7 @@ const Layout = ({ passedPath, children }) => {
   const { locale } = useLocalization();
   let pathname = "";
   if(passedPath) {
-    if(locale == "en") {
+    if(locale === "en") {
       pathname = passedPath;
     } else {
       pathname = `/${locale}${passedPath}`;
