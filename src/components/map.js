@@ -2,6 +2,12 @@ import * as React from "react";
 import { MapContainer, TileLayer, ZoomControl } from "react-leaflet";
 import "../components/map.css"
 
+const isDomAvailable = () => (
+  typeof window !== "undefined" &&
+  !!window.document &&
+  !!window.document.createElement
+);
+
 const Map = ({ children, className, ...rest }) => {
   let mapClassName = `map`;
   if(className) {
@@ -14,22 +20,26 @@ const Map = ({ children, className, ...rest }) => {
     ...rest,
   };
 
-  if(typeof window !== "undefined") {
+  if(!isDomAvailable()){
     return (
       <div className={mapClassName}>
-        <MapContainer {...mapSettings}>
-          {children}
-          <TileLayer
-            attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          />
-          <ZoomControl position="bottomright" />
-        </MapContainer>
+        <p className="map-loading">Loading map…</p>
       </div>
     );
   }
 
-  return null;
+  return (
+    <div className={mapClassName}>
+      <MapContainer {...mapSettings}>
+        {children}
+        <TileLayer
+          attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        />
+        <ZoomControl position="bottomright" />
+      </MapContainer>
+    </div>
+  );
 };
   
 export default Map;
