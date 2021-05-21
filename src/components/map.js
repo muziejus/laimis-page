@@ -1,5 +1,6 @@
 import * as React from "react";
 import { MapContainer, TileLayer, ZoomControl } from "react-leaflet";
+import useConfigureLeaflet from "../hooks/useConfigureLeaflet";
 import "../components/map.css"
 
 const isDomAvailable = () => (
@@ -9,6 +10,7 @@ const isDomAvailable = () => (
 );
 
 const Map = ({ children, className, ...rest }) => {
+  useConfigureLeaflet();
   let mapClassName = `map`;
   if(className) {
     mapClassName = `${mapClassName} ${className}`;
