@@ -15,7 +15,7 @@ msgstr ""
 
 #: src/pages/memorial.js:30
 msgid "<0>St. Mary’s Catholic Church</0>, 789 Dartmouth St., South Dartmouth, MA"
-msgstr "<0>St. Mary’s Catholic Church</0>, 789 Dartmouth St., South Dartmouth, MA"
+msgstr "<0>Igreja de Santa Maria em Dartmouth</0>, 789 Dartmouth St., South Dartmouth, MA"
 
 #: src/pages/memorial.js:46
 msgid "<0>St. Peter’s Lithuanian Parish</0>, 75 Flaherty Way, South Boston"
@@ -39,11 +39,11 @@ msgstr "Data"
 
 #: src/pages/index.js:20
 msgid "Donate to The Cam Neely Foundation"
-msgstr ""
+msgstr "Doação para a Fundação Cam Neely"
 
 #: src/pages/index.js:15
 msgid "Donate to the Jimmy Fund"
-msgstr ""
+msgstr "Doação para o Jimmy Fund"
 
 #: src/components/header.js:20
 msgid "In Memory of Laimis"
@@ -55,7 +55,7 @@ msgstr "Jimmy Fund"
 
 #: src/pages/memorial.js:26
 msgid "Memorial Mass at St. Mary’s Dartmouth"
-msgstr ""
+msgstr "Missa em memória na Igreja de Santa Maria em Dartmouth"
 
 #: src/pages/memorial.js:42
 msgid "Memorial Mass at St. Peters’s South Boston"
