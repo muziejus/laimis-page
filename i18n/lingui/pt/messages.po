@@ -15,11 +15,11 @@ msgstr ""
 
 #: src/pages/memorial.js:30
 msgid "<0>St. Mary’s Catholic Church</0>, 789 Dartmouth St., South Dartmouth, MA"
-msgstr ""
+msgstr "<0>St. Mary’s Catholic Church</0>, 789 Dartmouth St., South Dartmouth, MA"
 
 #: src/pages/memorial.js:46
 msgid "<0>St. Peter’s Lithuanian Parish</0>, 75 Flaherty Way, South Boston"
-msgstr ""
+msgstr "<0>St. Peter’s Lithuanian Parish</0>, 75 Flaherty Way, South Boston"
 
 #: src/components/testimonial.js:12
 msgid "Author"
@@ -27,7 +27,7 @@ msgstr "Autor/a"
 
 #: src/components/footer.js:8
 msgid "Built with <0>Gatsby</0> by Laimis’s brother Moacir with art direction by Laimis’s niece Nia."
-msgstr "Criado com <0>Gatsby</0> por Moacir P., o irmão de Laimis. Projetado por Nia, a sobrinha de Laimis."
+msgstr "Criado com <0>Gatsby</0> por Moacir P., irmão de Laimis. Projetado por Nia, sobrinha de Laimis."
 
 #: src/components/menu.js:29
 msgid "Cam Neely Foundation"
