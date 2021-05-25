@@ -18,7 +18,7 @@ const Memorial = () => {
     timeZone: "America/New_York",
     timeZoneName: "short"
   }
-  const stMarysDate = i18n.date("2021-06-26 10:00 EDT", dateOptions);
+  const stMarysDate = i18n.date("2021-06-26 9:30 EDT", dateOptions);
   const stPetersDate = i18n.date("2021-06-27 10:30 EDT", dateOptions);
   return (
     <Layout passedPath={"/memorial"}>
