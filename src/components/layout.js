@@ -34,7 +34,10 @@ const Layout = ({ passedPath, children }) => {
         nodes {
           absolutePath
           childImageSharp {
-            gatsbyImageData
+            gatsbyImageData(
+              placeholder: BLURRED
+              formats: [AUTO, WEBP, AVIF]
+            )
           }
         }
       }
