@@ -1,5 +1,5 @@
-const languages = require("./src/data/languages");
-const siteUrl = `https://laimis.desapereira.com`;
+const languages = require("./src/data/languages")
+const siteUrl = `https://laimis.desapereira.com`
 
 module.exports = {
   siteMetadata: {
@@ -20,12 +20,12 @@ module.exports = {
     },
     `gatsby-plugin-image`,
     {
-      resolve: 'gatsby-plugin-react-svg',
+      resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
           include: /\.svg/,
-        }
-      }
+        },
+      },
     },
     {
       resolve: `gatsby-plugin-google-fonts-v2`,
